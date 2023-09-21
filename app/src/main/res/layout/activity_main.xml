@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Pick a date"
+        android:textSize="40dp"/>
+
+
+    <EditText
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:hint="year"
+        android:textSize="24dp"
+        />
+
+    <Spinner
+        android:id="@+id/monthsArray"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="48dp"
+        android:textSize="24dp"/>
+
+    <Spinner
+        android:id="@+id/daysArray"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="48dp"
+        android:textSize="24dp"/>
+
+
+    <Button
+        android:id="@+id/calcBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="CALCULATE"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:text="Days between today and your date: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/daysResult"
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="40dp"/>
+
+</LinearLayout>
