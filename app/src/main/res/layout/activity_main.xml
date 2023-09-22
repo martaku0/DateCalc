@@ -31,14 +31,16 @@
         android:layout_width="wrap_content"
         android:layout_gravity="center"
         android:layout_height="48dp"
-        android:textSize="24dp"/>
+        android:textSize="24dp"
+        android:visibility="invisible"/>
 
     <Spinner
         android:id="@+id/daysArray"
         android:layout_width="wrap_content"
         android:layout_gravity="center"
         android:layout_height="48dp"
-        android:textSize="24dp"/>
+        android:textSize="24dp"
+        android:visibility="invisible"/>
 
 
     <Button
@@ -48,16 +50,19 @@
         android:layout_gravity="center"
         android:text="CALCULATE"
         android:textSize="20dp"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"/>
 
 
     <TextView
+        android:id="@+id/resultsTxt"
         android:text="Days between today and your date: "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textSize="20dp"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="30dp"
+        android:visibility="invisible"/>
 
     <TextView
         android:id="@+id/daysResult"
@@ -65,6 +70,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="40dp"/>
+        android:textSize="40dp"
+        android:visibility="invisible"/>
 
 </LinearLayout>
